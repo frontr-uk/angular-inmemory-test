@@ -1,7 +1,7 @@
 import { Injectable } from "@angular/core";
 import { Observable } from "rxjs/internal/Observable";
-import { ApiService } from "../data/api.service";
-import { GetData } from "../models/get-data.interface";
+import { ApiService } from "../../data/api.service";
+import { GetData } from "../../models/get-data.interface";
 
 /** 
  Facade discusses encapsulating a complex subsystem within a single 

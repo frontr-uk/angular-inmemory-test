@@ -1,7 +1,8 @@
 import { InMemoryDbService } from 'angular-in-memory-web-api';
 import { Customer } from '../models/customer.interface';
+import { Order } from '../models/orders.inteface';
 import { createCustomerData } from './customer';
-import { createOrderData, Order } from './order';
+import { createOrderData } from './order';
 import { createProductData, Product } from './product';
 
 export class AppData implements InMemoryDbService {

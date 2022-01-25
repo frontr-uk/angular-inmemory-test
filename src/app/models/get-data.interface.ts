@@ -1,5 +1,6 @@
-import { Order } from "../data/order";
+
 import { Product } from "../data/product";
+import { Order } from "./orders.inteface";
 
 export interface GetData {
     customer: Map<number, string>;

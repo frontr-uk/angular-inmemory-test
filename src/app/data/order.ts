@@ -1,9 +1,4 @@
-export interface Order {
-  id: number;
-  date: string;
-  customerId: number;
-  productId: number;
-}
+import { Order } from "../models/orders.inteface";
 
 export function createOrderData(): Order[] {
   return [

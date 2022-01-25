@@ -1,6 +1,6 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { FormControl } from '@angular/forms';
-import { FacadeService } from './services/facade.service';
+import { FacadeService } from './services/facade/facade.service';
 
 @Component({
   selector: 'app-root',

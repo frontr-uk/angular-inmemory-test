@@ -5,9 +5,9 @@ import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { AppData } from './data/app-data';
 
 import { AppComponent } from './app.component';
-import { FacadeService } from './services/facade.service';
+import { FacadeService } from './services/facade/facade.service';
 import { ReactiveFormsModule } from '@angular/forms';
-import { FilterNamesPipe } from './services/filter-names.pipe';
+import { FilterNamesPipe } from './services/filter-names/filter-names.pipe';
 
 const SERVICES = [ FacadeService ];
 const COMPONENTS = [AppComponent, FilterNamesPipe]

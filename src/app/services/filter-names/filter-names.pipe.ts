@@ -1,5 +1,6 @@
 import { Pipe, PipeTransform } from '@angular/core';
-import { Order } from '../data/order';
+import { Order } from 'src/app/models/orders.inteface';
+
 
 @Pipe({
     name: 'filterNamesPipe',
@@ -9,6 +10,6 @@ import { Order } from '../data/order';
 export class FilterNamesPipe implements PipeTransform {
     transform(orders: Order[], customerId: string): Order[] {
       if(!customerId) return orders;
-      return orders.filter((order:Order) => order.customerId == parseInt(customerId));
+      return orders.filter((order:Order): boolean => order.customerId === parseInt(customerId));
     }
 }
